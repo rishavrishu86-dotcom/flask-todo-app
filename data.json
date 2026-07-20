@@ -1,0 +1,10 @@
+{
+  "app": "Flask To-Do",
+  "author": "Rishav",
+  "version": 1,
+  "message": "Hello from the /api route",
+  "items": [
+    "Learn Git branching",
+    "Build the Flask app"
+  ]
+}
