@@ -1,10 +1,12 @@
 {
   "app": "Flask To-Do",
   "author": "Rishav",
-  "version": 1,
-  "message": "Hello from the /api route",
+  "version": 2,
+  "message": "Updated content from the Rishav_new branch",
   "items": [
     "Learn Git branching",
-    "Build the Flask app"
+    "Build the Flask app",
+    "Resolve a merge conflict",
+    "Deploy to production"
   ]
 }
