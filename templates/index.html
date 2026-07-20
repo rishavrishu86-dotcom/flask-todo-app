@@ -3,10 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Flask To-Do</title>
+  <title>To-Do</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 480px; margin: 40px auto; padding: 0 16px; }
+    h1 { margin-bottom: 4px; }
+    form { display: grid; gap: 12px; margin-top: 20px; }
+    label { display: grid; gap: 4px; font-weight: 600; }
+    input, textarea { padding: 8px; font: inherit; border: 1px solid #ccc; border-radius: 6px; }
+    button { padding: 10px; font-weight: 600; border: 0; border-radius: 6px; background: #1a5276; color: #fff; cursor: pointer; }
+  </style>
 </head>
 <body>
-  <h1>Flask To-Do App</h1>
-  <p>Welcome. The <code>/api</code> route serves the JSON data.</p>
+  <h1>To-Do</h1>
+  <p>Add a new to-do item.</p>
+  <form action="/submittodoitem" method="POST">
+    <label>Item Name
+      <input type="text" name="itemName" placeholder="e.g. Buy groceries" required />
+    </label>
+    <label>Item Description
+      <textarea name="itemDescription" rows="3" placeholder="Details..."></textarea>
+    </label>
+    <button type="submit">Add To-Do</button>
+  </form>
 </body>
 </html>
